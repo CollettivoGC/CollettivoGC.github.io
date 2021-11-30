@@ -55,7 +55,6 @@ var music;
             days[i] = this.add.image(x,y,'surprise').setOrigin(0, 0).setInteractive();
             this.add.text(x+5, y, i+1, { font: '28px Arial' }).setOrigin(0, 0);
           } else {
-          /*
             if ( i < 3 )
             {
               if ( 0 == i )
@@ -68,17 +67,16 @@ var music;
                 days[1] = this.add.image(750,0,'02').setOrigin(0, 0).setInteractive();
                 this.add.text(755, 0, "2", { font: '28px Arial', fill: '#EE0000' }).setOrigin(0, 0);
               }
-              else // if ( 2 == i )
+              else /*if ( 2 == i )*/
               {
                 days[2] = this.add.image(900,0,'03').setOrigin(0, 0).setInteractive();
                 this.add.text(905, 0, "3", { font: '28px Arial', fill: '#EE0000' }).setOrigin(0, 0);
               }
               
-              //days[i].__activated = true; days[i].__index = i+1;
+              days[i].__activated = true; days[i].__index = i+1;
             
             }
             else
-            */
             {
               days[i] = this.add.image(x,y,("0"+(i+1)).slice(-2)).setOrigin(0, 0).setInteractive();
               if ( (10 == i) || (14 == i) || (22 == i) || (25 == i) || (28 == i) || (30 == i) )
